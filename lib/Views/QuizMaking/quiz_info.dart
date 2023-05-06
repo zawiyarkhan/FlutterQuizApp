@@ -184,6 +184,7 @@ class _QuizInfoState extends State<QuizInfo> {
                             //mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               FloatingActionButton(
+                                heroTag: "randomBtn",
                                 onPressed: () {
                                   provider.generteCode();
                                   //String code = provider.getCode;
@@ -243,6 +244,7 @@ class _QuizInfoState extends State<QuizInfo> {
                 ),
               ),
               floatingActionButton: FloatingActionButton(
+                heroTag: "acceptBtn",
                 onPressed: (() {
                   Get.to(() => ChooseQuestion(
                         name: _nameController.text,
